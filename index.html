@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<!-- External Stylesheet -->
+		<link rel = "stylesheet" href = "style.css" />
+		
+		<!--  Title -->
+		<title>Piano Tiles Game</title>
+		
+		<!-- UTF8 -->
+		<meta charset = "UTF-8" />
+	
+	</head>
+	
+	<body>
+	
+		<h1>Piano Tiles Game</h1>
+		
+		Choose grid size :
+		<select id = "size">
+			<option value = "4" selected>4</option>
+			<option value = "6">6</option>
+		</select>
+		
+		<h3>Current Score : <span id = "score"></span></h3>
+		
+		<div id="stopwatch">
+  <!-- CURRENT TIME -->
+  <div id="sw-time">00:00:00</div>
+ 
+  <!-- CONTROLS -->
+  <input type="button" value="Reset" id="sw-rst" disabled />
+  <input type="button" value="Start" id="sw-go" disabled />
+</div>
+	
+		<br />
+		
+		<table id = "game" class = "classone"></table>
+		
+		<!-- Leaderboard -->
+		<div id = "leaderboard" class = "modal">
+		
+			<div class = "content">
+			
+				<div class = "header">
+					<span id = "close">&times;</span>
+					<h3 id = "result">Hello</h3>
+					<h2>Leaderboard</h2>
+				</div>
+				
+				<div id = "scores" class = "body"></div>
+			
+			</div>
+		
+		</div>
+		
+		<!--  External Script File -->
+		<script src = "script.js"></script>
+	</body>
+
+</html>
