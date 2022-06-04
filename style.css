@@ -1,0 +1,123 @@
+body {
+	font-family: Arial;
+    background-image: url(bckg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+select
+{
+	border: 1px solid black;
+	border-radius: 10px;
+}
+h1 {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+table,tr,td {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+table#game
+{
+	background-color: rgb(173, 254, 214);
+}
+
+td {
+    background-color: black;
+    width: 81px; 
+    height: 81px;
+}
+
+td:hover
+{
+	background-color: rgb(193, 215, 215);
+	cursor: pointer;
+}
+
+span#score
+{
+	color: brown;
+}
+
+@keyframes anim
+{
+	from { background-color: black; }
+	to { background-color: rgb(193, 215, 215); }
+}
+
+.animClass
+{
+	animation-name: anim;
+	animation-duration: 1s;
+}
+
+span#score
+{
+	color: blue;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 5%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+#close {
+  color: white;
+  float: right;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  padding: 2% 2%;
+  background-color: coral;
+  color: white;
+}
+
+.body {padding: 2% 2%;}
+
+.footer {
+  padding: 2% 2%;
+  background-color: #5cb85c;
+  color: white;
+}
+
+div#sw-time
+{
+	font-weight: bold;
+	color: orange;
+}
